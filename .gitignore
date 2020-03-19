@@ -1,0 +1,24 @@
+
+# OS X system file
+.DS_Store
+
+# package management downloads
+node_modules
+bower_components
+
+# compiled files
+# js
+# css
+# views
+index.html
+**/build/**/*
+**/dist/**/*
+
+# temp files
+tmp
+npm-debug.log
+
+#IDE folder
+.vscode
+.cache
+#
