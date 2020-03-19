@@ -18,7 +18,7 @@
   "devDependencies": {
     "@babel/core": "7",
     "@babel/plugin-syntax-jsx": "7",
-    "@babel/preset-env": "7",
+    "@babel/preset-env": "^7.8.7",
     "@storybook/addon-a11y": "6.0.0-alpha.25",
     "@storybook/addon-actions": "6.0.0-alpha.25",
     "@storybook/addon-backgrounds": "6.0.0-alpha.25",
@@ -34,10 +34,12 @@
     "@storybook/addons": "6.0.0-alpha.25",
     "@storybook/source-loader": "6.0.0-alpha.25",
     "@storybook/vue": "^6.0.0-alpha.25",
+    "@vue/babel-preset-app": "^4.2.3",
     "babel-core": "^7.0.0-bridge.0",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "babel-loader": "^8.0.5",
     "babel-plugin-transform-vue-jsx": "^4",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-vue": "^2.0.2",
     "cross-env": "^7.0.0",
     "file-loader": "^5.0.2",
@@ -47,7 +49,7 @@
     "webpack": "^4.33.0",
     "webpack-dev-server": "^3.8.2"
   },
-  "babel": {
+  "babelConfig": {
     "presets": [
       [
         "env",
@@ -61,7 +63,8 @@
             ]
           }
         }
-      ]
+      ],
+      "@vue/app"
     ],
     "plugins": [
       "transform-vue-jsx"
